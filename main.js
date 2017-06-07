@@ -55,6 +55,5 @@ const treeParameters = {};
 
 // add an event listener to the Grow you tree button
 document.getElementById("inputButton").addEventListener("click", userInput);
-
 // document.getElementById("treeHeight").addEventListener("")
 
