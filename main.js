@@ -34,7 +34,7 @@ function userInput(){
 	// console.log("input char is ", inputChar);
 
 	// if either of the fields are empty an alert will be thrown
-	if (inputHeight === '' || treeParameters.char === '') {
+	if (inputHeight === '' || inputChar === '') {
 		alert("Both fields must be given a value!");
 
 	}
@@ -55,5 +55,11 @@ const treeParameters = {};
 
 // add an event listener to the Grow you tree button
 document.getElementById("inputButton").addEventListener("click", userInput);
-// document.getElementById("treeHeight").addEventListener("")
-
+document.getElementById("treeHeight").addEventListener("keydown", function(){
+	var keyResult = event.which;
+	if (keyResult === 13) {userInput()}
+});
+document.getElementById("treeChar").addEventListener("keydown", function(){
+	var keyResult = event.which;
+	if (keyResult === 13) {userInput()}
+});
