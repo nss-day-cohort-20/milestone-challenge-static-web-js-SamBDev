@@ -3,12 +3,12 @@ function tree (treeParameters) {
 
 	// loop so the console is logged as heigth parameter indicates
 	for (let i = 0; i < treeParameters.height; i++) {
-		
+
 		// set up whiteSpace string variable so we can call .repeat() on it
 		let whiteSpace = " ";
 
 		// calculate the amount of white space needed for each line.
-		// As there is no need to explicitly log white space after 
+		// As there is no need to explicitly log white space after
 		// the characters there is no need to multiply by two
 		// only to divide by two later
 		let neededWhiteSpace = (treeParameters.height - (i+1));
@@ -20,7 +20,7 @@ function tree (treeParameters) {
 	}
 }
 
-// take input values and assigns them as necessary. 
+// take input values and assigns them as necessary.
 // Runs when event listener condition met
 function userInput(){
 
@@ -46,7 +46,7 @@ function userInput(){
 		treeParameters.height = inputHeight;
 		treeParameters.char = inputChar;
 
-		tree(treeParameters);	
+		tree(treeParameters);
 	}
 }
 
